@@ -9,6 +9,14 @@ repository and history rules. `Repository` is an alias for `AISpecEngine`.
 The Engine package must be published before this SDK can be published because
 it is a runtime dependency.
 
+## Install
+
+After both packages are published:
+
+```shell
+npm install @aispechq/typescript-sdk
+```
+
 ## Usage
 
 ```ts
@@ -35,7 +43,9 @@ repository.saveRepository();
 ## Development
 
 ```shell
-# Until @aispechq/engine is published, install it from the sibling repository.
+# Build the sibling Engine checkout before installing it locally.
+npm --prefix ../aispec-engine install
+npm --prefix ../aispec-engine run build
 npm install --no-save --package-lock=false file:../aispec-engine
 npm test
 ```
