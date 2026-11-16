@@ -7,7 +7,7 @@ import test from "node:test";
 import {
   AISpecEngine,
   Repository,
-} from "@aispechq/typescript-sdk";
+} from "@iaspec/typescript-sdk";
 
 test("the TypeScript SDK exposes the Engine repository API", () => {
   const root = mkdtempSync(join(tmpdir(), "aispec-typescript-sdk-"));

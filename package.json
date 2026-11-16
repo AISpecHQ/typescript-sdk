@@ -1,5 +1,5 @@
 {
-  "name": "@aispechq/typescript-sdk",
+  "name": "@iaspec/typescript-sdk",
   "version": "0.1.0",
   "description": "TypeScript SDK for AISpec repositories",
   "license": "Apache-2.0",
@@ -24,7 +24,7 @@
     "prepublishOnly": "npm test"
   },
   "dependencies": {
-    "@aispechq/engine": "^0.1.0"
+    "@iaspec/engine": "^0.1.0"
   },
   "devDependencies": {
     "typescript": "^7.0.2"

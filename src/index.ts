@@ -1,2 +1,2 @@
-export * from "@aispechq/engine";
-export { AISpecEngine as Repository } from "@aispechq/engine";
+export * from "@iaspec/engine";
+export { AISpecEngine as Repository } from "@iaspec/engine";
