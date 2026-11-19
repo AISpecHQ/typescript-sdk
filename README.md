@@ -9,6 +9,38 @@ repository and history rules. `Repository` is an alias for `AISpecEngine`.
 The Engine package must be published before this SDK can be published because
 it is a runtime dependency.
 
+## EngineSpec v2
+
+The same package exposes the domain-neutral API as `EngineSpec`. It does not
+duplicate repository logic:
+
+```ts
+import { EngineSpec } from "@iaspec/typescript-sdk";
+
+const engine = await EngineSpec.initialize({
+  name: "Media archive",
+  workspace: "./project",
+  traceStore: { scheme: "file", value: "./trace-store" },
+});
+
+const snapshot = await engine.capture({
+  selectors: [
+    { type: "filesystem.directory", locator: { path: "." } },
+  ],
+});
+
+await engine.commit({
+  snapshotId: snapshot.id,
+  ref: "heads/main",
+  expectedHead: null,
+  expectedGeneration: 0,
+  author: { id: "local:developer" },
+  message: "Initial capture",
+});
+```
+
+`Repository` remains the AISpec v0 facade and is backward compatible.
+
 ## Install
 
 After both packages are published:
