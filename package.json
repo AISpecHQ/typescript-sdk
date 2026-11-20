@@ -1,7 +1,7 @@
 {
-  "name": "@iaspec/typescript-sdk",
-  "version": "0.1.0",
-  "description": "TypeScript SDK for AISpec repositories",
+  "name": "@enginespec/typescript-sdk",
+  "version": "0.2.0",
+  "description": "TypeScript SDK for the EngineSpec platform",
   "license": "Apache-2.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -24,7 +24,7 @@
     "prepublishOnly": "npm test"
   },
   "dependencies": {
-    "@iaspec/engine": "^0.1.0"
+    "@enginespec/engine": "^0.2.0"
   },
   "devDependencies": {
     "typescript": "^7.0.2"

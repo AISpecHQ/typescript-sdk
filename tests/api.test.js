@@ -8,7 +8,7 @@ import {
   AISpecEngine,
   EngineSpec,
   Repository,
-} from "@iaspec/typescript-sdk";
+} from "@enginespec/typescript-sdk";
 
 test("the TypeScript SDK exposes the Engine repository API", async () => {
   const root = await mkdtemp(join(tmpdir(), "aispec-typescript-sdk-"));

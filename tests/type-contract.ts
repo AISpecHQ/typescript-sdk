@@ -4,7 +4,7 @@ import {
   type AISpecNode,
   type CreateCommitInput,
   type ValidationResult,
-} from "@iaspec/typescript-sdk";
+} from "@enginespec/typescript-sdk";
 
 const typeCheck = (repository: ReturnType<typeof Repository.create>): ValidationResult => {
   const node: AISpecNode = { id: "assistant", edges: [] };
