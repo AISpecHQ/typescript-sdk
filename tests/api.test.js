@@ -5,10 +5,13 @@ import { join } from "node:path";
 import test from "node:test";
 
 import {
-  AISpecEngine,
   EngineSpec,
-  Repository,
 } from "@enginespec/typescript-sdk";
+import * as universal from "@enginespec/typescript-sdk";
+import {
+  AISpecEngine,
+  Repository,
+} from "@enginespec/typescript-sdk/aispec-v0";
 
 test("the TypeScript SDK exposes the Engine repository API", async () => {
   const root = await mkdtemp(join(tmpdir(), "aispec-typescript-sdk-"));
@@ -40,6 +43,8 @@ test("the TypeScript SDK exposes the Engine repository API", async () => {
 });
 
 test("the TypeScript SDK exposes EngineSpec v2", async () => {
+  assert.equal("AISpecEngine" in universal, false);
+  assert.equal("Repository" in universal, false);
   const root = await mkdtemp(join(tmpdir(), "enginespec-typescript-sdk-"));
   try {
     const workspace = join(root, "workspace");
