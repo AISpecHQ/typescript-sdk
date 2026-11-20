@@ -2,11 +2,11 @@
 
 Status: under development.
 
-The TypeScript SDK is a thin, typed entry point to `@enginespec/engine`. It
+The TypeScript SDK is a thin, typed entry point to `@engine-spec/engine`. It
 re-exports the Engine API instead of maintaining a second implementation of
 repository and history rules. The AISpec compatibility API is separate. `Repository` remains an alias for
 `AISpecEngine`, but is imported from
-`@enginespec/typescript-sdk/aispec-v0`.
+`@engine-spec/typescript-sdk/aispec-v0`.
 
 The Engine package must be published before this SDK can be published because
 it is a runtime dependency.
@@ -17,7 +17,7 @@ The same package exposes the domain-neutral API as `EngineSpec`. It does not
 duplicate repository logic:
 
 ```ts
-import { EngineSpec } from "@enginespec/typescript-sdk";
+import { EngineSpec } from "@engine-spec/typescript-sdk";
 
 const engine = await EngineSpec.initialize({
   name: "Media archive",
@@ -48,7 +48,7 @@ await engine.commit({
 After both packages are published:
 
 ```shell
-npm install @enginespec/typescript-sdk
+npm install @engine-spec/typescript-sdk
 ```
 
 ## Usage
@@ -57,7 +57,7 @@ npm install @enginespec/typescript-sdk
 import {
   Repository,
   type CreateCommitInput,
-} from "@enginespec/typescript-sdk/aispec-v0";
+} from "@engine-spec/typescript-sdk/aispec-v0";
 
 const repository = Repository.create("./my-project", {
   name: "Example",

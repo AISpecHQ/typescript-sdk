@@ -1,1 +1,1 @@
-export * from "@enginespec/engine";
+export * from "@engine-spec/engine";

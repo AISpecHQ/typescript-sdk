@@ -6,12 +6,12 @@ import test from "node:test";
 
 import {
   EngineSpec,
-} from "@enginespec/typescript-sdk";
-import * as universal from "@enginespec/typescript-sdk";
+} from "@engine-spec/typescript-sdk";
+import * as universal from "@engine-spec/typescript-sdk";
 import {
   AISpecEngine,
   Repository,
-} from "@enginespec/typescript-sdk/aispec-v0";
+} from "@engine-spec/typescript-sdk/aispec-v0";
 
 test("the TypeScript SDK exposes the Engine repository API", async () => {
   const root = await mkdtemp(join(tmpdir(), "aispec-typescript-sdk-"));

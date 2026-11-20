@@ -1,6 +1,6 @@
 {
-  "name": "@enginespec/typescript-sdk",
-  "version": "0.2.0",
+  "name": "@engine-spec/typescript-sdk",
+  "version": "0.2.1",
   "description": "TypeScript SDK for the EngineSpec platform",
   "license": "Apache-2.0",
   "type": "module",
@@ -28,7 +28,7 @@
     "prepublishOnly": "npm test"
   },
   "dependencies": {
-    "@enginespec/engine": "^0.2.0"
+    "@engine-spec/engine": "^0.2.0"
   },
   "devDependencies": {
     "typescript": "^7.0.2"
