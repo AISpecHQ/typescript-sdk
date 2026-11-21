@@ -11,6 +11,14 @@ repository and history rules. The AISpec compatibility API is separate. `Reposit
 That subpath delegates to `@iaspec/engine-adapter`. The universal root remains
 independent of AISpec types and runtime dependencies.
 
+The adapter is optional for the universal SDK:
+
+```powershell
+npm install --omit=optional @engine-spec/typescript-sdk
+```
+
+Install `@iaspec/engine-adapter` when using the `/aispec-v0` subpath.
+
 The Engine package must be published before this SDK can be published because
 it is a runtime dependency.
 

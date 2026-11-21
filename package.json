@@ -28,7 +28,9 @@
     "prepublishOnly": "npm test"
   },
   "dependencies": {
-    "@engine-spec/engine": "^0.2.1",
+    "@engine-spec/engine": "^0.2.1"
+  },
+  "optionalDependencies": {
     "@iaspec/engine-adapter": "^0.2.1"
   },
   "devDependencies": {
