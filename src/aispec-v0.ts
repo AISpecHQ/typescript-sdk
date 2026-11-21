@@ -1,2 +1,2 @@
-export * from "@engine-spec/engine/aispec-v0";
-export { AISpecEngine as Repository } from "@engine-spec/engine/aispec-v0";
+export * from "@iaspec/engine-adapter";
+export { AISpecEngine as Repository } from "@iaspec/engine-adapter";

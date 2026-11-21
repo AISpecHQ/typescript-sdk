@@ -28,9 +28,11 @@
     "prepublishOnly": "npm test"
   },
   "dependencies": {
-    "@engine-spec/engine": "^0.2.0"
+    "@engine-spec/engine": "^0.2.1",
+    "@iaspec/engine-adapter": "^0.2.1"
   },
   "devDependencies": {
+    "@iaspec/engine-adapter": "file:../aispec-engine-adapter",
     "typescript": "^7.0.2"
   },
   "publishConfig": {
