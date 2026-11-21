@@ -32,7 +32,6 @@
     "@iaspec/engine-adapter": "^0.2.1"
   },
   "devDependencies": {
-    "@iaspec/engine-adapter": "file:../aispec-engine-adapter",
     "typescript": "^7.0.2"
   },
   "publishConfig": {
