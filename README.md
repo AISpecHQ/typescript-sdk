@@ -8,6 +8,9 @@ repository and history rules. The AISpec compatibility API is separate. `Reposit
 `AISpecEngine`, but is imported from
 `@engine-spec/typescript-sdk/aispec-v0`.
 
+That subpath delegates to `@iaspec/engine-adapter`. The universal root remains
+independent of AISpec types and runtime dependencies.
+
 The Engine package must be published before this SDK can be published because
 it is a runtime dependency.
 
